@@ -1,0 +1,10 @@
+# FatNotes 官网构建产物与本地环境忽略规则 - By AICode
+node_modules/
+build/
+.docusaurus/
+.cache-loader/
+*.local
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

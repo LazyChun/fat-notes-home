@@ -1,0 +1,8 @@
+{
+  // FatNotes 官网 TypeScript 配置 - By AICode
+  "extends": "@docusaurus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true
+  }
+}

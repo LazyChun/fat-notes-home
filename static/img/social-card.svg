@@ -1,0 +1,20 @@
+<!-- FatNotes social media sharing card - By AICode -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBackground" x1="80" y1="30" x2="1110" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF3FF"/>
+    </linearGradient>
+    <linearGradient id="cardLogo" x1="110" y1="125" x2="270" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1677FF"/>
+      <stop offset="1" stop-color="#665CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#cardBackground)"/>
+  <circle cx="1070" cy="80" r="310" fill="#1677FF" fill-opacity=".08"/>
+  <circle cx="90" cy="590" r="260" fill="#725CFF" fill-opacity=".08"/>
+  <rect x="110" y="135" width="132" height="132" rx="30" fill="url(#cardLogo)"/>
+  <path d="M151 176H211V196H171V208H204V227H171V251H151V176Z" fill="white"/>
+  <text x="110" y="360" fill="#0B1220" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="750">FatNotes</text>
+  <text x="110" y="440" fill="#536174" font-family="Arial, sans-serif" font-size="38">Knowledge, data, automation and AI - in one workspace.</text>
+</svg>

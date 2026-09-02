@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.开始使用": {
+    "message": "Get Started",
+    "description": "The label for category '开始使用' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.使用指南": {
+    "message": "Guides",
+    "description": "The label for category '使用指南' in sidebar 'tutorialSidebar'"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "FatNotes",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "FatNotes Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.首页": {
+    "message": "Home",
+    "description": "Navbar item with label 首页"
+  },
+  "item.label.功能": {
+    "message": "Features",
+    "description": "Navbar item with label 功能"
+  },
+  "item.label.文档": {
+    "message": "Docs",
+    "description": "Navbar item with label 文档"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

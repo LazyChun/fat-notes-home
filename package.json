@@ -1,0 +1,65 @@
+{
+  "name": "fat-notes-home",
+  "version": "1.0.0",
+  "private": true,
+  "description": "肥仔笔记官网",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "npm run build && docusaurus serve",
+    "start:zh": "docusaurus start --locale zh-Hans",
+    "start:en": "docusaurus start --locale en",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LazyChun/fat-notes-home.git"
+  },
+  "keywords": [
+    "fatnotes",
+    "documentation",
+    "knowledge-workspace"
+  ],
+  "author": "FatNotes Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/LazyChun/fat-notes-home/issues"
+  },
+  "homepage": "https://github.com/LazyChun/fat-notes-home#readme",
+  "dependencies": {
+    "@docusaurus/core": "^3.10.2",
+    "@docusaurus/preset-classic": "^3.10.2",
+    "@mdx-js/react": "^3.1.1",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.10.2",
+    "@docusaurus/tsconfig": "^3.10.2",
+    "@docusaurus/types": "^3.10.2",
+    "typescript": "^5.9.3"
+  }
+}
