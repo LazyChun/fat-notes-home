@@ -90,7 +90,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/LazyChun/fat-notes',
+          href: 'https://github.com/LazyChun/fat-notes-home',
           label: 'GitHub',
           position: 'right',
         },
@@ -115,11 +115,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/LazyChun/fat-notes',
+              href: 'https://github.com/LazyChun/fat-notes-home',
             },
             {
               label: '问题反馈',
-              href: 'https://github.com/LazyChun/fat-notes/issues',
+              href: 'https://github.com/LazyChun/fat-notes-home/issues',
             },
           ],
         },
