@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '使用指南',
       items: [
+        'guides/features',
         'guides/knowledge-workspace',
         'guides/data-dashboard',
         'guides/flow-automation',

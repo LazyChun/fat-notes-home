@@ -1,4 +1,4 @@
-# FatNotes visual workflow automation guide - By AICode
+# FatNotes visual workflow automation guide
 ---
 sidebar_position: 3
 title: Workflow Automation

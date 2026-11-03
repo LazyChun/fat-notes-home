@@ -1,4 +1,4 @@
-# FatNotes 官网 GitHub Pages 自动构建与部署流程 - By AICode
+# FatNotes 官网 GitHub Pages 自动构建与部署流程
 name: Deploy website to GitHub Pages
 
 on:

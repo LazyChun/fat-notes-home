@@ -1,4 +1,4 @@
-# Website documentation authoring and publishing guide - By AICode
+# Website documentation authoring and publishing guide
 ---
 sidebar_position: 2
 title: Edit This Documentation

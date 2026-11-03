@@ -1,4 +1,4 @@
-# FatNotes 知识工作台指南，介绍内容组织方式 - By AICode
+# FatNotes 知识工作台指南，介绍内容组织方式
 ---
 sidebar_position: 1
 title: 知识工作台

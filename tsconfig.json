@@ -1,5 +1,5 @@
 {
-  // FatNotes 官网 TypeScript 配置 - By AICode
+  // FatNotes 官网 TypeScript 配置 
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "noEmit": true

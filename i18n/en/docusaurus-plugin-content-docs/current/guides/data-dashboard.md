@@ -1,4 +1,4 @@
-# FatNotes data dashboard and database connection guide - By AICode
+# FatNotes data dashboard and database connection guide
 ---
 sidebar_position: 2
 title: Data Dashboards

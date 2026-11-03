@@ -1,4 +1,4 @@
-# FatNotes 文档中心首页，介绍文档结构与产品能力 - By AICode
+# FatNotes 文档中心首页，介绍文档结构与产品能力
 ---
 sidebar_position: 1
 title: 欢迎使用 FatNotes
@@ -19,6 +19,8 @@ FatNotes（肥仔笔记）是一个本地优先的桌面级知识工作台。它
 - **按需扩展**：使用插件机制扩展侧边栏、工作流节点与业务能力。
 
 ## 从这里开始
+
+想快速了解 FatNotes 能做什么？请阅读[功能总览](./guides/features.md)。
 
 第一次使用 FatNotes？请阅读[快速开始](./getting-started/quick-start.md)。
 

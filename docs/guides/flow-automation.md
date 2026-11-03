@@ -1,4 +1,4 @@
-# FatNotes 流程自动化指南，介绍可视化流程基本结构 - By AICode
+# FatNotes 流程自动化指南，介绍可视化流程基本结构
 ---
 sidebar_position: 3
 title: 流程自动化

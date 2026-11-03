@@ -66,7 +66,7 @@ const features: FeatureItem[] = [
   },
 ];
 
-// 渲染单个产品能力卡片 - By AICode
+// 渲染单个产品能力卡片
 function FeatureCard({feature}: FeatureCardProps): ReactNode {
   return (
     <article className="feature-card">
@@ -83,7 +83,7 @@ function FeatureCard({feature}: FeatureCardProps): ReactNode {
   );
 }
 
-// 渲染用于展示产品能力的 IDE 风格界面模型 - By AICode
+// 渲染用于展示产品能力的 IDE 风格界面模型
 function ProductMockup(): ReactNode {
   return (
     <div className="product-shell" aria-label="FatNotes workspace preview">
@@ -170,7 +170,7 @@ function ProductMockup(): ReactNode {
  *
  * @returns 官网首页内容
  */
-// 组合并渲染 FatNotes 官网首页 - By AICode
+// 组合并渲染 FatNotes 官网首页 
 export default function Home(): ReactNode {
   return (
     <Layout

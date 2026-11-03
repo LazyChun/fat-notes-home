@@ -1,4 +1,4 @@
-# FatNotes documentation landing page and product overview - By AICode
+# FatNotes documentation landing page and product overview
 ---
 sidebar_position: 1
 title: Welcome to FatNotes
@@ -19,6 +19,8 @@ FatNotes is a local-first desktop knowledge workspace. It brings notes, data das
 - **Extend the workspace** through a flexible plugin architecture.
 
 ## Start here
+
+Want a quick tour of what FatNotes can do? Read the [Feature Overview](./guides/features.md).
 
 New to FatNotes? Follow the [Quick Start](./getting-started/quick-start.md).
 

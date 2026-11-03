@@ -1,4 +1,4 @@
-<!-- FatNotes 官网项目说明与本地开发指南 - By AICode -->
+<!-- FatNotes 官网项目说明与本地开发指南 -->
 
 # FatNotes 官网
 

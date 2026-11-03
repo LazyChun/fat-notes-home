@@ -1,4 +1,4 @@
-# FatNotes 数据看板指南，介绍数据连接与可视化思路 - By AICode
+# FatNotes 数据看板指南，介绍数据连接与可视化思路
 ---
 sidebar_position: 2
 title: 数据看板

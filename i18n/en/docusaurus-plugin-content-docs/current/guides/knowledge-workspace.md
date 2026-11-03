@@ -1,4 +1,4 @@
-# FatNotes knowledge workspace organization guide - By AICode
+# FatNotes knowledge workspace organization guide
 ---
 sidebar_position: 1
 title: Knowledge Workspace

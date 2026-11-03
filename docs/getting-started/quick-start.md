@@ -1,4 +1,4 @@
-# FatNotes 快速开始指南，说明基础使用流程 - By AICode
+# FatNotes 快速开始指南，说明基础使用流程
 ---
 sidebar_position: 1
 title: 快速开始

@@ -1,4 +1,4 @@
-# FatNotes quick start guide for first-time users - By AICode
+# FatNotes quick start guide for first-time users
 ---
 sidebar_position: 1
 title: Quick Start
