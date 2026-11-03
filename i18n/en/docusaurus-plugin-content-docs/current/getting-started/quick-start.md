@@ -1,4 +1,3 @@
-# FatNotes quick start guide for first-time users
 ---
 sidebar_position: 1
 title: Quick Start
@@ -7,19 +6,28 @@ description: Create your first FatNotes workspace in a few minutes.
 
 # Quick Start
 
-This guide walks you through the basic setup and your first knowledge workspace.
+This guide walks you through the basic setup and your first knowledge workspace. It takes about five minutes.
 
-## 1. Get FatNotes
+## 1. Download and install
 
 Visit the [FatNotes GitHub repository](https://github.com/LazyChun/fat-notes) for the current release and installation instructions.
 
+System requirements: Windows 10 or later with the WebView2 runtime (already included on most systems). Download the installer and follow the prompts—no extra environment setup needed.
+
 ## 2. Create a workspace
 
-After launching FatNotes, choose a local folder for your workspace. Use separate folders for unrelated projects to keep notes, assets, and settings easy to manage.
+After launching FatNotes, choose a local folder as your workspace. The workspace is the root directory for your notes, assets, and settings; everything stays on your own computer.
+
+Use a separate folder for each project, for example:
+
+```text
+D:\notes\            # daily workspace
+D:\notes-study\      # study notes
+```
 
 ## 3. Write your first note
 
-Create a Markdown document from the resource area, then use headings, lists, code blocks, and links to structure your content.
+Right-click in the explorer sidebar to create a Markdown document, then use headings, lists, code blocks, and links to structure your content:
 
 ```md
 # My first FatNotes note
@@ -31,11 +39,18 @@ Today:
 - Create an automation flow
 ```
 
-## 4. Explore more
+FatNotes pages are built from blocks—beyond plain text you can insert tables, charts, terminals, diagrams, and 60+ other block types, all freely draggable.
 
-- [Knowledge workspace](../guides/knowledge-workspace.md)
-- [Data dashboards](../guides/data-dashboard.md)
-- [Workflow automation](../guides/flow-automation.md)
+## 4. Three things to try right away
+
+- **Press `Ctrl + K`** to open the command palette: search files, run commands, and open AI chat from one place.
+- **Build a data dashboard**: connect a SQLite database and turn a query into a chart. See [Data Dashboards](../guides/data-dashboard.md).
+- **Create an automation flow**: for example, convert a Unix timestamp to readable time in one click. See [Workflow Automation](../guides/flow-automation.md).
+
+## 5. Keep reading
+
+- [Knowledge Workspace](../guides/knowledge-workspace.md): layout and content organization.
+- [Feature Overview](../guides/features.md): the complete feature tour with screenshots.
 
 :::info Active development
 FatNotes is actively evolving. Features and interface details may change between releases.
