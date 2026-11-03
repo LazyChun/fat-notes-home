@@ -11,3 +11,4 @@ yarn-error.log*
 
 # WorkBuddy 本地工作数据（备份/截图/临时文件/记忆）
 .workbuddy/
+build-verify/

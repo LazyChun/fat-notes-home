@@ -269,7 +269,7 @@ FatNotes 插件基于 **Module Federation** 在运行时加载（类比 VSCode �
 
 ![第三方插件：人体图谱 3D](pathname:///fat-notes-home/img/features/plugin-body3d.png)
 
-**Fat Games 游戏箱**：内置 31 款小游戏（2048、俄罗斯方块、贪吃蛇、扫雷、五子棋……）：
+**肥游**：内置 31 款小游戏（2048、俄罗斯方块、贪吃蛇、扫雷、五子棋……）：
 
 ![第三方插件：游戏箱](pathname:///fat-notes-home/img/features/plugin-games.png)
 
@@ -281,7 +281,7 @@ FatNotes 插件基于 **Module Federation** 在运行时加载（类比 VSCode �
 
 ![第三方插件：IT 面试题库](pathname:///fat-notes-home/img/features/plugin-interview.png)
 
-**轻型写作**（fat-pen）：项目制写作工作区：
+**肥笔**：项目制写作工作区：
 
 ![第三方插件：轻型写作](pathname:///fat-notes-home/img/features/plugin-pen.png)
 

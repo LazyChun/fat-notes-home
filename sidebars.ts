@@ -26,6 +26,16 @@ const sidebars: SidebarsConfig = {
         'guides/flow-automation',
       ],
     },
+    {
+      type: 'category',
+      label: '热门插件',
+      items: ['plugins/index'],
+    },
+    {
+      type: 'category',
+      label: '插件开发',
+      items: ['plugin-dev/index'],
+    },
   ],
 };
 

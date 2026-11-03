@@ -235,7 +235,7 @@ The host stays zero-heavy-dependency — chromadb, PaddleOCR, Playwright and oth
 
 ![Third-party plugin: Body Map 3D](pathname:///fat-notes-home/img/features/plugin-body3d.png)
 
-**Fat Games**: 31 mini games built in (2048, Tetris, Snake, Minesweeper, Gomoku…):
+**肥游**: 31 mini games built in (2048, Tetris, Snake, Minesweeper, Gomoku…):
 
 ![Third-party plugin: game box](pathname:///fat-notes-home/img/features/plugin-games.png)
 
@@ -247,7 +247,7 @@ The host stays zero-heavy-dependency — chromadb, PaddleOCR, Playwright and oth
 
 ![Third-party plugin: IT interview bank](pathname:///fat-notes-home/img/features/plugin-interview.png)
 
-**Light Writing** (fat-pen): a project-based writing workspace:
+**肥笔**: a project-based writing workspace:
 
 ![Third-party plugin: light writing](pathname:///fat-notes-home/img/features/plugin-pen.png)
 
