@@ -233,26 +233,25 @@ body {
 .product-shell {
   position: relative;
   overflow: hidden;
-  border: 1px solid #4f79b5;
+  border: 1px solid #e3e9f2;
   border-radius: 11px;
-  color: #c8d2e1;
-  background: #111923;
+  color: #5a6b84;
+  background: #fff;
   box-shadow:
-    0 32px 80px rgba(26, 57, 101, 0.24),
-    0 0 0 4px rgba(61, 131, 255, 0.08);
+    0 24px 60px rgba(26, 57, 101, 0.14),
+    0 0 0 4px rgba(61, 131, 255, 0.05);
   font-family: "Segoe UI", sans-serif;
   font-size: 9px;
-  transform: perspective(1600px) rotateY(-1.2deg) rotateX(0.7deg);
 }
 
 .window-bar {
   display: flex;
   align-items: center;
   gap: 5px;
-  height: 28px;
+  height: 26px;
   padding: 0 11px;
-  border-bottom: 1px solid #263140;
-  background: #17202b;
+  border-bottom: 1px solid #e6ebf4;
+  background: #f4f6fb;
 }
 
 .window-dot {
@@ -276,7 +275,7 @@ body {
 .window-title {
   margin: auto;
   padding-right: 35px;
-  color: #6f7c8f;
+  color: #8b98ac;
   font-size: 7px;
 }
 
@@ -484,10 +483,110 @@ body {
   justify-content: space-between;
   height: 20px;
   padding: 5px 10px;
-  border-top: 1px solid #263140;
-  color: #7e8da0;
-  background: #131c26;
+  border-top: 1px solid #e6ebf4;
+  color: #93a0b4;
+  background: #f8fafc;
   font-size: 7px;
+}
+
+/* 首页预览走马灯 */
+.hero-carousel {
+  position: relative;
+  min-height: 360px;
+  background: #fff;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.hero-slide--active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
+  background: #fff;
+}
+
+.hero-slide figcaption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  color: #e8eef7;
+  background: rgba(23, 43, 77, 0.78);
+  backdrop-filter: blur(4px);
+  font-size: 10px;
+}
+
+.hero-carousel-dots {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1;
+  display: flex;
+  gap: 7px;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(23, 43, 77, 0.24);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-dot--active {
+  background: #1677ff;
+  transform: scale(1.15);
+}
+
+/* 文档图片灯箱（双击放大） */
+.markdown img {
+  cursor: zoom-in;
+}
+
+.img-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(13, 20, 32, 0.86);
+  backdrop-filter: blur(6px);
+  cursor: zoom-out;
+}
+
+.img-lightbox img {
+  max-width: min(1400px, 94vw);
+  max-height: 88vh;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+}
+
+.img-lightbox p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.85rem;
 }
 
 .features-section {
@@ -688,17 +787,8 @@ body {
     font-size: clamp(2.8rem, 14vw, 4rem);
   }
 
-  .workspace {
-    grid-template-columns: 30px 90px minmax(280px, 1fr);
-    min-width: 580px;
-  }
-
-  .product-shell {
-    overflow-x: auto;
-  }
-
-  .flow-panel {
-    display: none;
+  .hero-carousel {
+    min-height: 230px;
   }
 
   .features-section,

@@ -5,6 +5,7 @@
  * @date 2026-09-02
  */
 
+import {useEffect, useState} from 'react';
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -83,78 +84,47 @@ function FeatureCard({feature}: FeatureCardProps): ReactNode {
   );
 }
 
-// 渲染用于展示产品能力的 IDE 风格界面模型
-function ProductMockup(): ReactNode {
+// 渲染首页预览区：走马灯循环播放图表展廊与流程画布截图
+function HeroCarousel(): ReactNode {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((current) => (current + 1) % heroSlides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className="product-shell" aria-label="FatNotes workspace preview">
+    <div className="product-shell" aria-label="FatNotes 功能预览">
       <div className="window-bar">
         <span className="window-dot window-dot--red" />
         <span className="window-dot window-dot--yellow" />
         <span className="window-dot window-dot--green" />
         <span className="window-title">FatNotes Workspace</span>
       </div>
-      <div className="workspace">
-        <aside className="activity-bar">
-          <strong>F</strong>
-          <span>▤</span>
-          <span>⌕</span>
-          <span>◇</span>
-          <span>⌘</span>
-        </aside>
-        <aside className="file-tree">
-          <small>工作空间</small>
-          <b>项目分析报告</b>
-          <span>⌄ 数据报告</span>
-          <span>　市场分析.md</span>
-          <span>　产品路线图</span>
-          <span>⌄ 数据库</span>
-          <span>　PostgreSQL</span>
-          <span>　SQLite</span>
-          <small>资源</small>
-          <span>Dataview</span>
-          <span>AI 助手</span>
-        </aside>
-        <section className="dashboard">
-          <div className="editor-tab">项目分析报告.md</div>
-          <p className="eyebrow"># 项目分析报告</p>
-          <h4>关键指标概览</h4>
-          <div className="metric-grid">
-            <div><small>总收入</small><b>¥82,736</b><em>↗ 12.4%</em></div>
-            <div><small>活跃项目</small><b>2,734</b><em>↗ 8.1%</em></div>
-          </div>
-          <div className="chart-card">
-            <span>收入趋势</span>
-            <svg viewBox="0 0 320 100" role="img" aria-label="Data trend">
-              <defs>
-                <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#2679ff" stopOpacity=".35" />
-                  <stop offset="100%" stopColor="#2679ff" stopOpacity="0" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M0 86 L25 78 L48 82 L70 62 L93 68 L116 46 L140 56 L164 35 L188 42 L210 22 L235 30 L260 14 L286 23 L320 7 L320 100 L0 100 Z"
-                fill="url(#chartFill)"
-              />
-              <path
-                d="M0 86 L25 78 L48 82 L70 62 L93 68 L116 46 L140 56 L164 35 L188 42 L210 22 L235 30 L260 14 L286 23 L320 7"
-                fill="none"
-                stroke="#4d8fff"
-                strokeWidth="3"
-              />
-            </svg>
-          </div>
-        </section>
-        <section className="flow-panel">
-          <div className="editor-tab">自动化流程.flow</div>
-          <div className="flow-node flow-node--green">定时触发<small>每天 09:00</small></div>
-          <span className="flow-line" />
-          <div className="flow-node flow-node--blue">查询数据<small>PostgreSQL</small></div>
-          <span className="flow-line" />
-          <div className="flow-branches">
-            <div className="flow-node flow-node--violet">数据清洗<small>Python 脚本</small></div>
-            <div className="flow-node flow-node--orange">发送报告<small>邮件通知</small></div>
-          </div>
-        </section>
+      <div className="hero-carousel">
+        {heroSlides.map((slide, index) => (
+          <figure
+            key={slide.src}
+            className={clsx('hero-slide', {'hero-slide--active': index === active})}
+            aria-hidden={index !== active}
+          >
+            <img src={slide.src} alt={slide.alt} loading="eager" />
+            <figcaption>{slide.caption}</figcaption>
+          </figure>
+        ))}
+        <div className="hero-carousel-dots">
+          {heroSlides.map((slide, index) => (
+            <button
+              key={slide.src}
+              type="button"
+              aria-label={`切换到第 ${index + 1} 张预览`}
+              className={clsx('hero-dot', {'hero-dot--active': index === active})}
+              onClick={() => setActive(index)}
+            />
+          ))}
+        </div>
       </div>
       <div className="status-bar">
         <span>main*</span>
@@ -164,6 +134,20 @@ function ProductMockup(): ReactNode {
     </div>
   );
 }
+
+// 首页预览走马灯的轮播片单
+const heroSlides = [
+  {
+    src: '/fat-notes-home/img/features/charts-display.png',
+    alt: '图表类型展廊：10 种图表块合集',
+    caption: '图表类型展廊 · 10 种图表块',
+  },
+  {
+    src: '/fat-notes-home/img/features/flow.png',
+    alt: '流程自动化：异常报告智能决策流画布',
+    caption: '流程自动化 · 可视化节点编排',
+  },
+];
 
 /**
  * FatNotes 官网首页组件
@@ -218,7 +202,7 @@ export default function Home(): ReactNode {
               </div>
             </div>
             <div className="hero-visual">
-              <ProductMockup />
+              <HeroCarousel />
             </div>
           </div>
         </header>

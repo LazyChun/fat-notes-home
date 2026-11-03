@@ -60,6 +60,10 @@ FatNotes 以「块（Block）」为基本单位搭建页面，基于拖拽网格
 
 ![图表组件页：表格 + 仪表盘 + 热力图 + 趋势](pathname:///fat-notes-home/img/features/chart-components.png)
 
+「图表类型展廊」在一页内集合 10 种图表块——数字卡、趋势图（line / bar / area）、排行榜、蜂群图、仪表盘、饼图、数据表格等，全部由同一份销售订单数据驱动：
+
+![图表类型展廊：10 种图表块合集](pathname:///fat-notes-home/img/features/charts-display.png)
+
 ### 时间过滤器联动
 
 每个看板都可以绑定时间过滤器，快捷区间（今天 / 最近 N 分钟 / 最近 N 小时）与绝对时间随意切换，所有图表随之刷新：
@@ -86,6 +90,30 @@ FatNotes 以「块（Block）」为基本单位搭建页面，基于拖拽网格
 
 依托 pandas、openpyxl、python-docx、python-pptx、pypdf，Excel / Word / PPT / PDF 都能被解析成结构化数据，喂给看板或 AI。
 
+### 演示看板实况
+
+以下看板全部来自 FatNotes 演示工作空间，由内置 SQLite 数据驱动，可以直接对照学习搭建思路：
+
+**销售经营驾驶舱**——销售额、订单量、客单价与退货趋势一屏总览：
+
+![销售经营驾驶舱](pathname:///fat-notes-home/img/features/charts-sell.png)
+
+**流量增长观测**——PV / UV、停留时长、渠道来源与增长对比：
+
+![流量增长观测](pathname:///fat-notes-home/img/features/charts-hot.png)
+
+**设备运维监控**——多设备温度曲线、告警计数与全站平均温度仪表盘：
+
+![设备运维监控](pathname:///fat-notes-home/img/features/charts-monitor.png)
+
+**健康打卡追踪**——体重、步数、睡眠时长与心率长期追踪：
+
+![健康打卡追踪](pathname:///fat-notes-home/img/features/charts-heath.png)
+
+**电商业务分析**——订单金额、转化趋势、热销 TOP 与每日交易类型分布：
+
+![电商业务分析](pathname:///fat-notes-home/img/features/charts-eshop.png)
+
 ---
 
 ## 三、流程自动化：把重复工作交给引擎
@@ -97,6 +125,12 @@ FatNotes 以「块（Block）」为基本单位搭建页面，基于拖拽网格
 - **AI**：大模型调用、知识库检索、Agent
 - **外部交互**：HTTP 请求、屏幕自动化（鼠标 / 键盘 / 找图 / 找色 / 截图）、浏览器自动化（Playwright）
 - **媒体**：音频 / 视频转码、TTS、ASR、OCR
+
+### 完整流程画布示例
+
+下面是一条真实的完整流程——「异常报告智能决策流」，从开始节点、分支判断到 HTTP 调用、代码执行、结果通知，全部在画布上节点化编排：
+
+![流程画布：异常报告智能决策流](pathname:///fat-notes-home/img/features/flow.png)
 
 ### 实际运行演示
 
