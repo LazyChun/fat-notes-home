@@ -42,6 +42,17 @@ const sidebars: SidebarsConfig = {
             'guides/system-components/misc',
           ],
         },
+        {
+          type: 'category',
+          label: '系统设置',
+          collapsed: false,
+          items: [
+            'guides/system-settings/overview',
+            'guides/system-settings/basic',
+            'guides/system-settings/system-data',
+            'guides/system-settings/components',
+          ],
+        },
       ],
     },
     {
