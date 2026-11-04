@@ -24,6 +24,23 @@ const sidebars: SidebarsConfig = {
         'guides/knowledge-workspace',
         'guides/data-dashboard',
         'guides/flow-automation',
+        {
+          type: 'category',
+          label: '系统组件',
+          collapsed: false,
+          items: [
+            'guides/system-components/overview',
+            'guides/system-components/chart',
+            'guides/system-components/window',
+            'guides/system-components/layout',
+            'guides/system-components/flow-widget',
+            'guides/system-components/filter',
+            'guides/system-components/form',
+            'guides/system-components/office',
+            'guides/system-components/dialog',
+            'guides/system-components/misc',
+          ],
+        },
       ],
     },
     {

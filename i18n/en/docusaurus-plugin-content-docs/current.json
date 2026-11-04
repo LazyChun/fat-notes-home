@@ -11,6 +11,10 @@
     "message": "Guides",
     "description": "The label for category '使用指南' in sidebar 'tutorialSidebar'"
   },
+  "sidebar.tutorialSidebar.category.系统组件": {
+    "message": "System Components",
+    "description": "The label for category '系统组件' in sidebar 'tutorialSidebar'"
+  },
   "sidebar.tutorialSidebar.category.热门插件": {
     "message": "Popular Plugins",
     "description": "The label for category '热门插件' in sidebar 'tutorialSidebar'"
