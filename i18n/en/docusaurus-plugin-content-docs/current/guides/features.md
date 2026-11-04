@@ -9,7 +9,7 @@ description: "The complete FatNotes feature tour: block canvas, data dashboards,
 
 FatNotes is a **local-first desktop knowledge workspace** for Windows. It puts notes, data dashboards, workflow automation, and an AI assistant into one professional interface — like "Notion that understands data" combined with "an IDE that understands automation".
 
-![FatNotes dashboard](pathname:///fat-notes-home/img/features/dashboard.png)
+![FatNotes note templates](pathname:///fat-notes-home/img/features/notebook.png)
 
 ## What problems does it solve?
 

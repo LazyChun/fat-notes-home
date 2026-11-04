@@ -137,6 +137,7 @@ function HeroCarousel(): ReactNode {
 
 // 首页预览走马灯的轮播片单
 const heroSlides = [
+
   {
     src: '/fat-notes-home/img/features/charts-display.png',
     alt: '图表类型展廊：10 种图表块合集',
@@ -146,6 +147,11 @@ const heroSlides = [
     src: '/fat-notes-home/img/features/flow.png',
     alt: '流程自动化：异常报告智能决策流画布',
     caption: '流程自动化 · 可视化节点编排',
+  },
+  {
+    src: '/fat-notes-home/img/features/notebook.png',
+    alt: '笔记模板：Markdown 语法速览与多种笔记模板',
+    caption: '笔记模板 · 块级富文本编辑',
   },
 ];
 
