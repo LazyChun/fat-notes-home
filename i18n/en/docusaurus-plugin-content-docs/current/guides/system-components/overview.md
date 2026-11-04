@@ -9,7 +9,7 @@ description: "An overview of FatNotes system components: every built-in block gr
 
 FatNotes pages are built from **blocks**; the blocks shipped with the app are called **system components**. Open the **Components** panel in the top-right corner of a page to browse by category or search by name, then add a component to the current page.
 
-FatNotes provides **52 system components in 10 categories**. Below they are listed in the same order as the component panel, each with a short description of what it does. Linked category headings lead to the corresponding chapter. Components in the *Plugin* category come from installed plugins and are not included here.
+FatNotes provides **52 system components in 10 categories**. Below they are listed in the same order as the component panel, each with a short description of what it does. Linked category headings lead to the corresponding chapter. The [common configuration](./common-config.md) shared by all blocks (title, data formats, frame, tooltip, legend, …) is covered in its own chapter. Components in the *Plugin* category come from installed plugins and are not included here.
 
 ## Component panel
 
@@ -125,5 +125,6 @@ Content display and automation components that do not fit the categories above.
 
 ## Related docs
 
+- [Common Configuration](./common-config.md) — Title, data formats, frame, tooltip, and legend options shared by all blocks.
 - [Flow Components](./flow-widget.md) — Reusable components for the flow canvas, used with flow automation nodes.
 - [Popular Plugins](../../plugins/index.md) — Extra components and capabilities provided by plugins.

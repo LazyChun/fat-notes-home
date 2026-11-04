@@ -30,6 +30,7 @@ const sidebars: SidebarsConfig = {
           collapsed: false,
           items: [
             'guides/system-components/overview',
+            'guides/system-components/common-config',
             'guides/system-components/chart',
             'guides/system-components/window',
             'guides/system-components/layout',
