@@ -146,6 +146,19 @@ Press `Ctrl + K` to open the command palette and jump straight into chat:
 
 ![Command palette: open Chat / command panel](pathname:///fat-notes-home/img/features/command-palette.png)
 
+### The AI assistant (sidebar Chat)
+
+The AI assistant lives in the right sidebar and can be summoned anytime. It is **context-aware by design**: it reads the current page's notes, dashboard data, and knowledge base (RAG), so "query data → interpret → advise" all happens in one place.
+
+- **One-key summon**: `Ctrl + K` → "Open Chat", or expand the conversation from the secondary sidebar
+- **Context-aware**: conversations can reference the current dashboard's queried data sources, so the AI answers and summarizes based on real data
+- **Task collaboration**: the AI can produce executable task cards (e.g. "build a 45-day traffic dashboard with fast-charts-trend") and write results back onto the canvas
+- **Multi-model support**: built-in DeepSeek and other models, with switchable strategies
+
+Below is the assistant embedded in a live dashboard — the right-side Chat panel reasons over the current traffic data and can spawn dashboard tasks straight from the queried sources:
+
+![AI assistant: sidebar Chat reasoning over dashboard data](pathname:///fat-notes-home/img/features/ai-assistant.png)
+
 ---
 
 ## 6. Global search and productivity details

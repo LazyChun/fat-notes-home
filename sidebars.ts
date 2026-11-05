@@ -21,6 +21,7 @@ const sidebars: SidebarsConfig = {
       label: '使用指南',
       items: [
         'guides/features',
+        'guides/ai-assistant',
         'guides/knowledge-workspace',
         'guides/data-dashboard',
         'guides/flow-automation',

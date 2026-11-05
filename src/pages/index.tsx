@@ -153,6 +153,11 @@ const heroSlides = [
     alt: '笔记模板：Markdown 语法速览与多种笔记模板',
     caption: '笔记模板 · 块级富文本编辑',
   },
+  {
+    src: '/fat-notes-home/img/features/ai-assistant.png',
+    alt: 'AI 助手：工作台侧栏 Chat 结合当前看板与知识库实时对话',
+    caption: 'AI 助手 · 侧栏 Chat 实时协作',
+  },
 ];
 
 /**
