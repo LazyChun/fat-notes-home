@@ -54,6 +54,7 @@ const sidebars: SidebarsConfig = {
             'guides/system-settings/components',
           ],
         },
+        'guides/database',
         'guides/scheduled-tasks',
       ],
     },
