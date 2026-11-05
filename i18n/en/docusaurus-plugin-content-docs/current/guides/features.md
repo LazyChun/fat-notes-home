@@ -270,6 +270,9 @@ Official plugins also include:
 | --- | --- |
 | fat-ai-base | Heavy AI capabilities (chromadb / PaddleOCR / OpenCV) |
 | fat-browser-use | Browser automation (Playwright) |
+| fat-charts | Chart blocks (trend / number / distribution / rank / honeycomb / dial) |
+| fat-cut | Video editing (multi-track timeline + AI arrangement) |
+| fat-photo | Image editing (layers / brush / text / adjustments) |
 
 ---
 

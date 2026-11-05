@@ -6,7 +6,7 @@ description: "FatNotes advanced plugins overview: a list of popular plugins with
 
 # Overview
 
-FatNotes热门插件，欢迎使用。
+Popular FatNotes plugins, all in one place.
 
 | Plugin | Description | GitHub |
 | --- | --- | --- |
@@ -17,3 +17,6 @@ FatNotes热门插件，欢迎使用。
 | 肥笔 | A project-based writing workspace for long-form writing (books, columns, article series) | Not open-sourced yet |
 | fat-ai-base | Heavy AI capabilities (chromadb vector store / PaddleOCR / OpenCV) | [LazyChun/fat-ai-base](https://github.com/LazyChun/fat-ai-base) |
 | fat-browser-use | Browser automation (Playwright) | [LazyChun/fat-browser-use](https://github.com/LazyChun/fat-browser-use) |
+| 肥图表 (fat-charts) | Chart blocks for dashboards — trend, number, distribution, rank, honeycomb and dial — turning query results into configurable visual cards (ECharts) | [LazyChun/fat-charts](https://github.com/LazyChun/fat-charts) |
+| 肥剪 (fat-cut) | A CapCut-style video editor with an asset library, multi-track timeline, preview and project saving; AI / MCP can generate an arrangement graph and lay it out on the timeline | [LazyChun/fat-cut](https://github.com/LazyChun/fat-cut) |
+| 肥图 (fat-photo) | A built-in canvas image editor with multi-tab documents, layers and blend modes, brush / text / shape / crop tools, plus adjustments and history | [LazyChun/fat-photo](https://github.com/LazyChun/fat-photo) |
