@@ -50,6 +50,7 @@ D:\notes-study\      # 学习笔记空间
 ## 5. 继续阅读
 
 - [知识工作台](../guides/knowledge-workspace.md)：了解界面布局与内容组织方式。
+- [功能](../guides/functions.md)：把页面里搭好的小应用构建成可复用的功能入口。
 - [功能总览](../guides/features.md)：完整功能介绍与截图演示。
 
 :::info 文档持续更新

@@ -50,6 +50,7 @@ FatNotes pages are built from blocks—beyond plain text you can insert tables, 
 ## 5. Keep reading
 
 - [Knowledge Workspace](../guides/knowledge-workspace.md): layout and content organization.
+- [Functions](../guides/functions.md): turn a mini-app built on a page into a reusable function.
 - [Feature Overview](../guides/features.md): the complete feature tour with screenshots.
 
 :::info Active development

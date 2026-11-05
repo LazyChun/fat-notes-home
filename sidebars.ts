@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
         'guides/knowledge-workspace',
         'guides/data-dashboard',
         'guides/flow-automation',
+        'guides/functions',
         {
           type: 'category',
           label: '系统组件',
