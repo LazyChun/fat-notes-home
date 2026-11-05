@@ -140,8 +140,8 @@ const heroSlides = [
 
   {
     src: '/fat-notes-home/img/features/charts-display.png',
-    alt: '图表类型展廊：10 种图表块合集',
-    caption: '图表类型展廊 · 10 种图表块',
+    alt: '图表类型展廊：50+ 种块组件合集',
+    caption: '提供50+种块组件',
   },
   {
     src: '/fat-notes-home/img/features/flow.png',

@@ -23,6 +23,7 @@ const sidebars: SidebarsConfig = {
         'guides/features',
         'guides/ai-assistant',
         'guides/knowledge-workspace',
+        'guides/quick-input',
         'guides/data-dashboard',
         'guides/flow-automation',
         'guides/functions',
