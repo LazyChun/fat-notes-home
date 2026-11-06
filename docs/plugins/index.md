@@ -18,6 +18,7 @@ FatNotes热门插件，欢迎使用。
 | [肥游（FatGames）](./fat-games.md) | 31 个游戏条目（30 款小游戏 + 排行榜）：三段式游戏工作台、统一舞台与音效、成绩自动记录，还可把游戏卡片拖进仪表盘 | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
 | [肥剪（FatCut）](./fat-cut.md) | 剪映式视频剪辑工作区：素材管理、多轨时间线、预览与工程保存；可由 AI / MCP 生成剪辑编排并一键铺到时间线 | [LazyChun/fat-cut](https://github.com/LazyChun/fat-cut) |
 | [肥图（FatPhoto）](./fat-photo.md) | 内置 Canvas 图片编辑器：多标签文档、图层与混合模式、画笔 / 文字 / 形状 / 裁剪工具，以及调整与历史记录 | [LazyChun/fat-photo](https://github.com/LazyChun/fat-photo) |
+| [肥音（FatAudio）](./fat-audio.md) | AI 音乐工作室：8 轨钢琴卷帘与混音台、可点击 / 拖拽 / 键盘输入的五线谱、16 件合成乐器与音色参数、虚拟钢琴，以及 AI 生成面板（当前为占位实现），工程全部落在本机 JSON | 暂未开源 |
 | [IT 面试题库（FatItInterview）](./fat-it-interview.md) | 364 道题，覆盖 Web 前端 / Java / 后端 / 运维 / 算法 / 数据库 / 网络 / 操作系统八大方向，支持分类与跨分类搜索、练习模式与本地进度；21 道算法题可逐步可视化演示 | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
 | [肥笔（FatPen）](./fat-pen.md) | 项目制小说创作工作台：卷 / 章 / 段落写作与锁定、世界观九大体系与自定义拓扑、地图工坊（地形生成 / 笔刷 / 标记 / 图层）、取名与三组可导入导出词库、风格设定与 AI Agent，数据全部落在本机 JSON | 暂未开源 |
 | 人体图谱 | 2,234 个建模部件的可交互 3D 人体，支持按系统（骨骼、肌肉、神经、循环……）筛选与逐层拆卸 | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
