@@ -19,6 +19,6 @@ FatNotes热门插件，欢迎使用。
 | [肥剪（FatCut）](./fat-cut.md) | 剪映式视频剪辑工作区：素材管理、多轨时间线、预览与工程保存；可由 AI / MCP 生成剪辑编排并一键铺到时间线 | [LazyChun/fat-cut](https://github.com/LazyChun/fat-cut) |
 | [肥图（FatPhoto）](./fat-photo.md) | 内置 Canvas 图片编辑器：多标签文档、图层与混合模式、画笔 / 文字 / 形状 / 裁剪工具，以及调整与历史记录 | [LazyChun/fat-photo](https://github.com/LazyChun/fat-photo) |
 | [IT 面试题库（FatItInterview）](./fat-it-interview.md) | 364 道题，覆盖 Web 前端 / Java / 后端 / 运维 / 算法 / 数据库 / 网络 / 操作系统八大方向，支持分类与跨分类搜索、练习模式与本地进度；21 道算法题可逐步可视化演示 | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
-| 肥笔 | 项目制写作工作区，为长文写作（书稿、专栏、系列文章）提供专注环境 | 暂未开源 |
+| [肥笔（FatPen）](./fat-pen.md) | 项目制小说创作工作台：卷 / 章 / 段落写作与锁定、世界观九大体系与自定义拓扑、地图工坊（地形生成 / 笔刷 / 标记 / 图层）、取名与三组可导入导出词库、风格设定与 AI Agent，数据全部落在本机 JSON | 暂未开源 |
 | 人体图谱 | 2,234 个建模部件的可交互 3D 人体，支持按系统（骨骼、肌肉、神经、循环……）筛选与逐层拆卸 | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
 | 肥棋（FatChess） | 棋类游戏集合插件：围棋 / 五子棋 / 中国象棋 / 国际象棋 / 斗兽棋 / 军棋（明盘），支持人机对战、对战大模型与本机双人三种模式 | [LazyChun/fat-chess](https://github.com/LazyChun/fat-chess) |
