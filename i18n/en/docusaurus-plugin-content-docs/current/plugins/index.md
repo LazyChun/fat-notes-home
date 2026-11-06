@@ -11,7 +11,7 @@ Popular FatNotes plugins, all in one place.
 | Plugin | Description | GitHub |
 | --- | --- | --- |
 | 3D Human Anatomy | An interactive 3D human body built from 2,234 modeled parts, with per-system filtering and layer-by-layer disassembly | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
-| 肥游 | 31 built-in mini games: 2048, Tetris, Snake, Minesweeper, Gomoku... | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
+| [FatGames](./fat-games.md) | 31 entries (30 mini games + a leaderboard): a three-part game workbench, a shared stage and sound engine, automatic score recording, plus a dashboard Game card | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
 | [Toolbox (FatTools)](./fat-tools.md) | 100 local mini tools in 11 categories (text, encoding, dev, numbers, files...), with a three-part workbench, search shortcuts, copy/export and restorable usage history | [LazyChun/fat-tools](https://github.com/LazyChun/fat-tools) |
 | IT Interview Bank (fat-it-interview) | 364 questions covering frontend / Java / backend / ops / algorithms / databases, with progress tracking | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
 | 肥笔 | A project-based writing workspace for long-form writing (books, columns, article series) | Not open-sourced yet |

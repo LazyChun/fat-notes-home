@@ -11,7 +11,7 @@ FatNotes热门插件，欢迎使用。
 | 插件 | 简介 | GitHub |
 | --- | --- | --- |
 | 人体图谱 | 2,234 个建模部件的可交互 3D 人体，支持按系统（骨骼、肌肉、神经、循环……）筛选与逐层拆卸 | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
-| 肥游 | 内置 31 款小游戏：2048、俄罗斯方块、贪吃蛇、扫雷、五子棋…… | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
+| [肥游（FatGames）](./fat-games.md) | 31 个游戏条目（30 款小游戏 + 排行榜）：三段式游戏工作台、统一舞台与音效、成绩自动记录，还可把游戏卡片拖进仪表盘 | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
 | [工具箱（FatTools）](./fat-tools.md) | 100 个本地小工具，覆盖文本 / 编码 / 开发 / 数值 / 文件等 11 类；三段式工作台，支持搜索直达、复制导出与可恢复的操作记录 | [LazyChun/fat-tools](https://github.com/LazyChun/fat-tools) |
 | IT 面试题库（fat-it-interview） | 364 道题，覆盖前端 / Java / 后端 / 运维 / 算法 / 数据库六大方向，支持刷题进度记录 | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
 | 肥笔 | 项目制写作工作区，为长文写作（书稿、专栏、系列文章）提供专注环境 | 暂未开源 |
