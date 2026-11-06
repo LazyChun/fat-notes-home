@@ -30,8 +30,8 @@ description: "FatBrowserUse（fat-browser-use）插件详解：13 个浏览器�
 | 流程运行时的点击、输入、取数、传文件 | `playwright_script.py` 中 20+ 个公开函数 | `playwright` + 本机浏览器 |
 | 节点输出变量（`data`、`filePath`、`time_used(ms)` 等） | 执行器整理后的输出参数 | 宿主变量系统 |
 
-:::info 和「肥Ai基座」是同一套机制
-宿主的 `pyBackendBridgeService` 维护一张「脚本名 → 插件 ID」映射表：`playwright_script.py` 归本插件，而 `chromadb_script.py / paddleocr_script.py / opencv_script.py` 等归 [肥Ai基座（FatAiBase）](./fat-ai-base.md)。两枚插件都是「后端能力型」，差别在于：FatAiBase 靠 `depsStrategy: install` 首次启动再装 1–2 GB 依赖，本插件把约 40 MB 的 Playwright 直接打进包里；此外本插件还额外注册了整套前端节点。
+:::info 和「肥・Ai基座」是同一套机制
+宿主的 `pyBackendBridgeService` 维护一张「脚本名 → 插件 ID」映射表：`playwright_script.py` 归本插件，而 `chromadb_script.py / paddleocr_script.py / opencv_script.py` 等归 [肥・Ai基座（FatAiBase）](./fat-ai-base.md)。两枚插件都是「后端能力型」，差别在于：FatAiBase 靠 `depsStrategy: install` 首次启动再装 1–2 GB 依赖，本插件把约 40 MB 的 Playwright 直接打进包里；此外本插件还额外注册了整套前端节点。
 :::
 
 ## 二、安装与首次启动
@@ -291,7 +291,7 @@ description: "FatBrowserUse（fat-browser-use）插件详解：13 个浏览器�
 ## 相关文档
 
 - [热门插件 · 总览](./index.md) —— 全部插件清单与项目地址
-- [肥Ai基座（FatAiBase）](./fat-ai-base.md) —— 同一套后端桥接机制的另一枚能力插件
+- [肥・Ai基座（FatAiBase）](./fat-ai-base.md) —— 同一套后端桥接机制的另一枚能力插件
 - [扩展中心](../guides/extensions.md) —— 安装、启用与依赖状态
 - [流程自动化](../guides/flow-automation.md) —— 节点编排、变量与异常处理
 - [定时任务](../guides/scheduled-tasks.md) —— 让浏览器流程按计划自动运行
