@@ -305,6 +305,7 @@ FatNotes 插件基于 **Module Federation** 在运行时加载（类比 VSCode �
 | fat-ai-base | AI 重型能力（chromadb / PaddleOCR / OpenCV） |
 | fat-browser-use | 浏览器自动化（Playwright） |
 | fat-charts | 图表块（趋势 / 数值 / 分布 / 排行 / 蜂窝 / 仪表盘） |
+| fat-diagrams | 结构绘制块（关系图 / 流程图 / 思维导图） |
 | fat-cut | 视频剪辑（多轨时间线 + AI 编排） |
 | fat-photo | 图片编辑（图层 / 画笔 / 文字 / 调整） |
 

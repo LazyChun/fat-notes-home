@@ -12,6 +12,7 @@ FatNotes热门插件，欢迎使用。
 | --- | --- | --- |
 | [工具箱（FatTools）](./fat-tools.md) | 100 个本地小工具，覆盖文本 / 编码 / 开发 / 数值 / 文件等 11 类；三段式工作台，支持搜索直达、复制导出与可恢复的操作记录 | [LazyChun/fat-tools](https://github.com/LazyChun/fat-tools) |
 | [肥图表（FatCharts）](./fat-charts.md) | 为仪表盘提供趋势、数值、分布、排行、蜂窝、仪表盘等图表块，把查询结果渲染成可配置的可视化卡片（ECharts） | 暂未开源 |
+| [关系与流程图（FatDiagrams）](./fat-diagrams.md) | 为仪表盘提供关系图、流程图、思维导图 3 种「结构绘制」卡片：图形直接画在卡片里并自动保存，不依赖数据查询（AntV G6 / 内置 draw.io / simple-mind-map） | [LazyChun/fat-diagrams](https://github.com/LazyChun/fat-diagrams) |
 | [肥・Ai基座（FatAiBase）](./fat-ai-base.md) | AI 重型能力（chromadb 向量库 / PaddleOCR 文字识别 / OpenCV 图像处理）；提供 OCR / 知识库配置页签与知识检索流程节点 | [LazyChun/fat-ai-base](https://github.com/LazyChun/fat-ai-base) |
 | [肥・浏览器控制（FatBrowserUse）](./fat-browser-use.md) | 浏览器自动化（Playwright）：13 个流程节点覆盖页面导航、元素交互、取数与文件传输，附元素选择器工具，后端由常驻 Python 子进程驱动 | [LazyChun/fat-browser-use](https://github.com/LazyChun/fat-browser-use) |
 | [肥游（FatGames）](./fat-games.md) | 31 个游戏条目（30 款小游戏 + 排行榜）：三段式游戏工作台、统一舞台与音效、成绩自动记录，还可把游戏卡片拖进仪表盘 | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
