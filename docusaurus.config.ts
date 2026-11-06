@@ -67,7 +67,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'FatNotes, 肥仔笔记, 知识管理, 数据看板, 自动化, AI',
+        content: 'FatNotes, 肥宅笔记, 知识管理, 数据看板, 自动化, AI',
       },
     ],
     navbar: {

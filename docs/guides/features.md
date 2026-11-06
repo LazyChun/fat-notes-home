@@ -1,13 +1,13 @@
 ---
 sidebar_position: 0
 title: 功能总览
-description: FatNotes（肥仔笔记）完整功能介绍：块级画布、数据看板、流程自动化、AI 能力、插件生态与插件开发。
+description: FatNotes（肥宅笔记）完整功能介绍：块级画布、数据看板、流程自动化、AI 能力、插件生态与插件开发。
 ---
 <!-- FatNotes 完整功能介绍 -->
 
 # FatNotes 功能总览
 
-FatNotes（肥仔笔记）是一款**本地优先的桌面级知识工作台**，运行于 Windows。它把笔记、数据看板、流程自动化和 AI 助手装进同一个专业界面——像一个「懂数据的 Notion + 懂自动化的 IDE」。
+FatNotes（肥宅笔记）是一款**本地优先的桌面级知识工作台**，运行于 Windows。它把笔记、数据看板、流程自动化和 AI 助手装进同一个专业界面——像一个「懂数据的 Notion + 懂自动化的 IDE」。
 
 ![FatNotes 笔记模板](pathname:///fat-notes-home/img/features/notebook.png)
 

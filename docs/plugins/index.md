@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
 title: 总览
-description: FatNotes（肥仔笔记）高级插件总览：热门插件列表，含插件名称、简介与 GitHub 地址。
+description: FatNotes（肥宅笔记）高级插件总览：热门插件列表，含插件名称、简介与 GitHub 地址。
 ---
 
 # 总览

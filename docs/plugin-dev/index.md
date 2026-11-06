@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
 title: 高级插件
-description: FatNotes（肥仔笔记）高级插件开发指南：脚手架创建、工程结构、activate 入口、SDK 能力一览、开发调试与打包发布。
+description: FatNotes（肥宅笔记）高级插件开发指南：脚手架创建、工程结构、activate 入口、SDK 能力一览、开发调试与打包发布。
 ---
 
 # 高级插件

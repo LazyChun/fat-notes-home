@@ -2,7 +2,7 @@
 
 # FatNotes 官网
 
-FatNotes（肥仔笔记）的官网与文档中心，基于 React、TypeScript 和 Docusaurus 构建。
+FatNotes（肥宅笔记）的官网与文档中心，基于 React、TypeScript 和 Docusaurus 构建。
 
 ## 本地开发
 

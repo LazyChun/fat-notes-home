@@ -2,7 +2,7 @@
   "name": "fat-notes-home",
   "version": "1.0.0",
   "private": true,
-  "description": "肥仔笔记官网",
+  "description": "肥宅笔记官网",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "npm run build && docusaurus serve",
