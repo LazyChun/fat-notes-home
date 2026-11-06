@@ -1,3 +1,5 @@
+@import './download.css';
+
 /**
  * FatNotes 官网全局主题与响应式页面样式
  *
@@ -68,6 +70,36 @@ body {
 .navbar__item {
   font-size: 0.92rem;
   font-weight: 550;
+}
+
+/* 顶部「下载」入口：渐变胶囊，和下载页视觉呼应 */
+.navbar__item.nav-download-pill {
+  margin-left: 0.35rem;
+  padding: 0.34rem 0.9rem;
+  border: 1px solid rgba(124, 92, 255, 0.28);
+  border-radius: 999px;
+  color: #6b4df0;
+  background: linear-gradient(100deg, rgba(124, 92, 255, 0.12), rgba(31, 200, 232, 0.1));
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.navbar__item.nav-download-pill:hover {
+  box-shadow: 0 6px 18px rgba(124, 92, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .navbar__item.nav-download-pill {
+  color: #b9a6ff;
+  border-color: rgba(124, 92, 255, 0.5);
+}
+
+@media (max-width: 996px) {
+  .navbar__item.nav-download-pill {
+    margin-left: 0;
+    padding: 0.4rem 0.85rem;
+  }
 }
 
 .hero {

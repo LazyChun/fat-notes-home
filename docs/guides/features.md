@@ -389,7 +389,6 @@ fn-ext pack    # 产出 release/<code>_v<version>.zip
 
 - 下载与安装：见 [快速开始](../getting-started/quick-start.md)
 - 系统要求：Windows 10+（WebView2 运行时），安装即用
-- 开源协议：AGPLv3，仓库地址 [LazyChun/fat-notes](https://github.com/LazyChun/fat-notes)
 
 :::tip 持续进化
 FatNotes 仍在快速迭代，本文截图来自当前最新版本，界面可能随版本略有变化。

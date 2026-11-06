@@ -355,7 +355,6 @@ Install the zip in-app under "Settings → Advanced plugins". For development, r
 
 - Download and install: see the [Quick Start](../getting-started/quick-start.md)
 - Requirements: Windows 10+ (WebView2 runtime), install and go
-- License: AGPLv3 — repository at [LazyChun/fat-notes](https://github.com/LazyChun/fat-notes)
 
 :::tip Always evolving
 FatNotes iterates fast. Screenshots in this document come from the latest release; the UI may change slightly between versions.

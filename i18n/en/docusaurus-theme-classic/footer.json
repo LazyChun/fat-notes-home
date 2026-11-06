@@ -11,6 +11,14 @@
     "message": "Quick Start",
     "description": "The label of footer link with label=快速开始 linking to /docs/getting-started/quick-start"
   },
+  "link.item.label.下载": {
+    "message": "Download",
+    "description": "The label of footer link with label=下载 linking to /download"
+  },
+  "link.item.label.更新日志": {
+    "message": "Changelog",
+    "description": "The label of footer link with label=更新日志 linking to /changelog"
+  },
   "link.item.label.文档中心": {
     "message": "Documentation",
     "description": "The label of footer link with label=文档中心 linking to /docs/intro"

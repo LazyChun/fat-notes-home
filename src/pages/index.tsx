@@ -197,8 +197,8 @@ export default function Home(): ReactNode {
                 </Translate>
               </p>
               <div className="hero-actions">
-                <Link className="button button--primary button--lg" to="/docs/getting-started/quick-start">
-                  <Translate id="homepage.cta.download">免费开始</Translate>
+                <Link className="button button--primary button--lg" to="/download">
+                  <Translate id="homepage.cta.download">免费下载</Translate>
                   <span aria-hidden="true"> ↓</span>
                 </Link>
                 <Link className="button button--secondary button--lg" to="/docs/intro">

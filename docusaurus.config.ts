@@ -90,6 +90,12 @@ const config: Config = {
           position: 'left',
         },
         {
+          to: '/download',
+          label: '下载',
+          position: 'left',
+          className: 'nav-download-pill',
+        },
+        {
           href: 'https://github.com/LazyChun/fat-notes-home',
           label: 'GitHub',
           position: 'right',
@@ -106,6 +112,8 @@ const config: Config = {
         {
           title: '开始使用',
           items: [
+            {label: '下载', to: '/download'},
+            {label: '更新日志', to: '/changelog'},
             {label: '快速开始', to: '/docs/getting-started/quick-start'},
             {label: '文档中心', to: '/docs/intro'},
           ],

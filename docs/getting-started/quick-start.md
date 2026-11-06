@@ -10,7 +10,7 @@ description: 用几分钟创建你的第一个 FatNotes 工作空间。
 
 ## 1. 下载与安装
 
-前往项目的 [GitHub 页面](https://github.com/LazyChun/fat-notes) 查看当前版本与安装说明。
+前往<a href="/fat-notes-home/download">下载页</a>获取当前版本、安装包与校验信息。
 
 系统要求：Windows 10 及以上版本，需要 WebView2 运行时（Win10/11 一般已自带）。下载安装包后按提示安装即可，无需额外配置环境。
 
