@@ -12,7 +12,7 @@ FatNotes热门插件，欢迎使用。
 | --- | --- | --- |
 | 人体图谱 | 2,234 个建模部件的可交互 3D 人体，支持按系统（骨骼、肌肉、神经、循环……）筛选与逐层拆卸 | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
 | 肥游 | 内置 31 款小游戏：2048、俄罗斯方块、贪吃蛇、扫雷、五子棋…… | [LazyChun/fat-games](https://github.com/LazyChun/fat-games) |
-| 工具箱（fat-tools） | 收录各种可视化小工具，例如 Tesla Model X 3D 展示与部件爆炸拆解 | [LazyChun/fat-tools](https://github.com/LazyChun/fat-tools) |
+| [工具箱（FatTools）](./fat-tools.md) | 100 个本地小工具，覆盖文本 / 编码 / 开发 / 数值 / 文件等 11 类；三段式工作台，支持搜索直达、复制导出与可恢复的操作记录 | [LazyChun/fat-tools](https://github.com/LazyChun/fat-tools) |
 | IT 面试题库（fat-it-interview） | 364 道题，覆盖前端 / Java / 后端 / 运维 / 算法 / 数据库六大方向，支持刷题进度记录 | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
 | 肥笔 | 项目制写作工作区，为长文写作（书稿、专栏、系列文章）提供专注环境 | 暂未开源 |
 | [肥Ai基座（fat-ai-base）](./fat-ai-base.md) | AI 重型能力（chromadb 向量库 / PaddleOCR 文字识别 / OpenCV 图像处理）；提供 OCR / 知识库配置页签与知识检索流程节点 | [LazyChun/fat-ai-base](https://github.com/LazyChun/fat-ai-base) |
