@@ -64,7 +64,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '热门插件',
-      items: ['plugins/index', 'plugins/fat-tools', 'plugins/fat-charts', 'plugins/fat-ai-base', 'plugins/fat-browser-use', 'plugins/fat-games', 'plugins/fat-photo'],
+      items: ['plugins/index', 'plugins/fat-tools', 'plugins/fat-charts', 'plugins/fat-ai-base', 'plugins/fat-browser-use', 'plugins/fat-games', 'plugins/fat-cut', 'plugins/fat-photo'],
     },
     {
       type: 'category',
