@@ -30,8 +30,8 @@ const copy = {
     'Release: already packaged into an installer you can download.',
   ),
   legendDev: L(
-    '开发快照：记录正在进行的迭代，尚未打包进安装包。',
-    'Dev snapshot: work in progress, not yet packaged into an installer.',
+    '开发快照：版本发布前的阶段性改进记录，最终交付以正式版本为准。',
+    'Dev snapshot: pre-release progress notes. Stable releases describe what actually shipped.',
   ),
   legendSource: L(
     '完整发布信息以发行版页面为准。',

@@ -30,7 +30,7 @@ const copy = {
     'Notes, data, automation, and AI in one local-first desktop app. Install once, start creating right away.',
   ),
   primary: L('下载 Windows 版', 'Download for Windows'),
-  primaryMeta: L('v0.1.0 · 60.1 MB · 免费', 'v0.1.0 · 60.1 MB · Free'),
+  primaryMeta: L(`v${DOWNLOAD.version} · ${DOWNLOAD.fileSize} · 免费`, `v${DOWNLOAD.version} · ${DOWNLOAD.fileSize} · Free`),
   secondary: L('查看更新日志', 'View changelog'),
   tertiary: L('先看安装指南', 'Read the install guide'),
   heroNote: L(
@@ -128,8 +128,8 @@ const copy = {
   logEyebrow: L('CHANGELOG / 更新日志', 'CHANGELOG'),
   logTitle: L('每一次迭代，都看得见', 'Every iteration, in plain sight'),
   logDesc: L(
-    '按版本浏览新增、优化与修复；开发快照记录尚未打包进安装包的改进。',
-    'Browse new features, improvements, and fixes by version. Dev snapshots track what has not shipped yet.',
+    '按版本浏览新增、优化与修复，也保留正式版发布前的阶段性开发记录。',
+    'Browse new features, improvements, and fixes by version, plus pre-release development notes.',
   ),
   logAll: L('打开完整更新日志', 'Open the full changelog'),
   bottomEyebrow: L('READY WHEN YOU ARE', 'READY WHEN YOU ARE'),
@@ -138,7 +138,7 @@ const copy = {
     '安装只需几分钟。跟着快速开始，创建工作空间并写下第一篇笔记。',
     'Installation takes a few minutes. Follow the quick start to create a workspace and write your first note.',
   ),
-  bottomPrimary: L('立即下载 v0.1.0', 'Get v0.1.0 now'),
+  bottomPrimary: L(`立即下载 v${DOWNLOAD.version}`, `Get v${DOWNLOAD.version} now`),
   bottomSecondary: L('阅读快速开始', 'Read the quick start'),
 };
 

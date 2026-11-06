@@ -8,7 +8,7 @@
     "start": "npm run build && docusaurus serve",
     "start:zh": "docusaurus start --locale zh-Hans",
     "start:en": "docusaurus start --locale en",
-    "build": "docusaurus build",
+    "build": "node scripts/build.js",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

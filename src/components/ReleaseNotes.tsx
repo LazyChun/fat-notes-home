@@ -41,8 +41,8 @@ const copy = {
   stable: L('正式发布', 'Release'),
   dev: L('开发快照', 'Dev snapshot'),
   devNote: L(
-    '该条目为开发快照，尚未打进 v0.1.0 安装包。',
-    'Dev snapshot — not yet bundled into the v0.1.0 installer.',
+    '该条目为版本发布前的阶段性记录，具体交付内容以正式版本为准。',
+    'Pre-release development record. See the stable releases for what actually shipped.',
   ),
   changes: L('本次变更', "What's inside"),
   empty: L('该版本暂无此类型的变更。', 'No changes of this type in this version.'),

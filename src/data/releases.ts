@@ -7,8 +7,9 @@
  * - 本地开发提交记录（git log，未公开发布）
  *
  * 说明：主程序源码未公开发布，对外只提供 Windows 安装包；页面只引用发行版页面地址，
- * 不提供源码包或仓库链接。v0.1.0 是唯一已打包发布的版本；其后标记为 dev 的条目是开发快照，
- * 尚未打进安装包，仅供了解迭代进度。发布新版时只需在 releases 数组头部追加一项。
+ * 不提供源码包或仓库链接。DOWNLOAD 始终表示当前可下载版本，历史版本信息放在
+ * PREVIOUS_DOWNLOAD；dev 条目是正式版发布前的阶段性记录，不代表另行发布的安装包。
+ * 发布新版时：更新 DOWNLOAD，把旧值移入 PREVIOUS_DOWNLOAD，并在 releases 数组头部追加一项。
  *
  * @author By AICode
  * @date 2026-11-07
@@ -17,18 +18,27 @@
 import {L} from './i18n';
 import type {Localized} from './i18n';
 
-/** 当前可下载版本的真实信息 */
+/** 当前可下载版本的真实信息（v0.1.1，2026-11-07 06:15 发布） */
 export const DOWNLOAD = {
+  version: '0.1.1',
+  fileName: 'FatNotes-Setup-0.1.1.exe',
+  /** Gitee 附件直链，应用内「检查更新」也使用同一地址规则 */
+  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.1/FatNotes-Setup-0.1.1.exe',
+  /** 远端 version.json 提供的安装包 MD5，与本地 dist 打包产物一致 */
+  md5: 'bd4e7e7c947f58af379817c5e0d6d4a2',
+  /** Content-Length: 63053996 bytes */
+  fileSize: '60.1 MB',
+  publishedAt: '2026-11-07',
+  releasesUrl: 'https://gitee.com/lazychun/fat-notes/releases',
+  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.1',
+} as const;
+
+/** 上一个正式版本，仅供更新日志里的历史版本展示 */
+export const PREVIOUS_DOWNLOAD = {
   version: '0.1.0',
   fileName: 'FatNotes-Setup-0.1.0.exe',
-  /** Gitee 附件直链，应用内「检查更新」也使用同一地址规则 */
   url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.0/FatNotes-Setup-0.1.0.exe',
-  /** 远端 version.json 提供的安装包 MD5 */
-  md5: 'dfdae2e958359702dbc729f9670cf3ca',
-  /** Content-Length: 63006012 bytes */
   fileSize: '60.1 MB',
-  publishedAt: '2026-11-02',
-  releasesUrl: 'https://gitee.com/lazychun/fat-notes/releases',
   releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.0',
 } as const;
 
@@ -58,8 +68,99 @@ export interface ReleaseEntry {
   releaseUrl?: string;
 }
 
-/** 按时间倒序：第 1 项为当前下载版本，其余为开发快照 */
+/** 按时间倒序：第 1 项为当前下载版本，其余为历史版本与开发记录 */
 export const releases: ReleaseEntry[] = [
+  {
+    id: 'v0.1.1',
+    version: 'v0.1.1',
+    date: '2026-11-07',
+    channel: 'stable',
+    title: L('编辑器与 AI 助手升级', 'Editor & AI Assistant Upgrade'),
+    summary: L(
+      '第二个公开预览版。官方发布说明为「优化 AI 助手、修复已知 bug」；11 月以来的编辑器、导出与扩展管理改进也一并打包。',
+      'Second public preview. Official notes highlight an improved AI assistant and bug fixes, bundled with the November editor, export, and extension improvements.',
+    ),
+    changes: [
+      {
+        kind: 'improve',
+        text: L(
+          '优化 AI 助手（官方发布说明）。',
+          'Improved the AI assistant (official release note).',
+        ),
+      },
+      {
+        kind: 'fix',
+        text: L(
+          '修复若干已知问题（官方发布说明）。',
+          'Fixed known issues (official release note).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          '命令面板新增文档入口，并补齐多语言文案（11-07）。',
+          'Documentation access from the command palette, plus localization updates (Nov 7).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '导出 funcs.json 时同步功能名称与描述（11-07）。',
+          'funcs.json exports now sync function names and descriptions (Nov 7).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          '富文本块支持媒体上传、缩放与行内编辑；新增 Excel / Word / PPT / PDF 导出（11-04）。',
+          'Rich-text media upload, resizing and inline editing; Excel, Word, PPT, and PDF export (Nov 4).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          'Markdown 块支持实时编辑，并简化组件实现与样式（11-03 / 11-04）。',
+          'Live Markdown editing and a simpler component with cleaner styles (Nov 3–4).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '块配置同步与 API 集成增强；新增运行时 token 文件管理，强化本地 API 鉴权（11-05）。',
+          'Improved block configuration sync and API integration; added runtime token file management for local API auth (Nov 5).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '重构「功能 / 我的工作流」面板的布局结构（11-06）。',
+          'Refactored the layout of the My Functions / My Workflows panels (Nov 6).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          '扩展安装状态管理、标签关闭与下拉样式优化（11-04）。',
+          'Better extension install state, tab closing, and dropdown styling (Nov 4).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '版本号升至 0.1.1，安装包与自动更新通道同步更新（11-07）。',
+          'Version bumped to 0.1.1 with the installer and in-app update channel kept in sync (Nov 7).',
+        ),
+      },
+    ],
+    assets: [
+      {
+        label: L('Windows 安装包', 'Windows installer'),
+        meta: `${DOWNLOAD.fileName} · ${DOWNLOAD.fileSize}`,
+        url: DOWNLOAD.url,
+      },
+    ],
+    releaseUrl: DOWNLOAD.releaseTagUrl,
+  },
   {
     id: 'v0.1.0',
     version: 'v0.1.0',
@@ -124,66 +225,11 @@ export const releases: ReleaseEntry[] = [
     assets: [
       {
         label: L('Windows 安装包', 'Windows installer'),
-        meta: 'FatNotes-Setup-0.1.0.exe · 60.1 MB',
-        url: DOWNLOAD.url,
+        meta: `${PREVIOUS_DOWNLOAD.fileName} · ${PREVIOUS_DOWNLOAD.fileSize}`,
+        url: PREVIOUS_DOWNLOAD.url,
       },
     ],
-    releaseUrl: DOWNLOAD.releaseTagUrl,
-  },
-  {
-    id: 'dev-2026-11-07',
-    version: '2026.11.07',
-    date: '2026-11-04 → 11-07',
-    channel: 'dev',
-    title: L('十一月第一周：编辑与工程化', 'Early November: Editing & Engineering'),
-    summary: L(
-      '开发快照 · 尚未打进 v0.1.0 安装包。集中在编辑器体验、扩展管理与文档入口。',
-      'Dev snapshot · not yet bundled into the v0.1.0 installer. Focused on editor experience, extension management, and docs access.',
-    ),
-    changes: [
-      {
-        kind: 'feat',
-        text: L(
-          '命令面板新增文档入口，并补齐多语言文案（11-07）。',
-          'Documentation access from the command palette, plus localization updates (Nov 7).',
-        ),
-      },
-      {
-        kind: 'improve',
-        text: L(
-          '重构「功能 / 我的工作流」面板的布局结构（11-06）。',
-          'Refactored the layout of the My Functions / My Workflows panels (Nov 6).',
-        ),
-      },
-      {
-        kind: 'feat',
-        text: L(
-          '块配置同步与 API 集成增强；新增运行时 token 文件管理，强化本地 API 鉴权（11-05）。',
-          'Improved block configuration sync and API integration; added runtime token file management for local API auth (Nov 5).',
-        ),
-      },
-      {
-        kind: 'feat',
-        text: L(
-          '扩展安装状态管理、标签关闭与下拉样式优化（11-04）。',
-          'Better extension install state, tab closing, and dropdown styling (Nov 4).',
-        ),
-      },
-      {
-        kind: 'feat',
-        text: L(
-          '富文本支持媒体缩放 / 上传与行内编辑；新增 Excel、Word、PPT、PDF 导出（11-04）。',
-          'Rich-text media resizing / upload and inline editing; Excel, Word, PPT, and PDF export (Nov 4).',
-        ),
-      },
-      {
-        kind: 'improve',
-        text: L(
-          'Markdown 块支持实时编辑，并简化组件实现与样式（11-03 / 11-04）。',
-          'Live Markdown editing and a simpler component with cleaner styles (Nov 3–4).',
-        ),
-      },
-    ],
+    releaseUrl: PREVIOUS_DOWNLOAD.releaseTagUrl,
   },
   {
     id: 'dev-2026-10-31',
@@ -192,8 +238,8 @@ export const releases: ReleaseEntry[] = [
     channel: 'dev',
     title: L('数据源与文件体验', 'Data Sources & File Handling'),
     summary: L(
-      '开发快照 · 尚未打进 v0.1.0 安装包。围绕 Excel 数据源、看板文件操作与插件目录打磨。',
-      'Dev snapshot · not yet bundled into the v0.1.0 installer. Excel sources, board file operations, and the extension catalog.',
+      '开发快照 · 首个预览版发布前的阶段性记录。围绕 Excel 数据源、看板文件操作与插件目录打磨。',
+      'Dev snapshot · pre-release progress notes. Excel sources, board file operations, and the extension catalog.',
     ),
     changes: [
       {
@@ -240,8 +286,8 @@ export const releases: ReleaseEntry[] = [
     channel: 'dev',
     title: L('插件 SDK 与 AI 能力', 'Plugin SDK & AI'),
     summary: L(
-      '开发快照 · 尚未打进 v0.1.0 安装包。插件可注册块分类，AI 助手与代码生成能力继续补齐。',
-      'Dev snapshot · not yet bundled into the v0.1.0 installer. Plugins can register block categories, with more AI assistance and code generation.',
+      '开发快照 · 首个预览版发布前的阶段性记录。插件可注册块分类，AI 助手与代码生成能力继续补齐。',
+      'Dev snapshot · pre-release progress notes. Plugins can register block categories, with more AI assistance and code generation.',
     ),
     changes: [
       {
@@ -288,8 +334,8 @@ export const releases: ReleaseEntry[] = [
     channel: 'dev',
     title: L('块系统大扩充', 'A Big Batch of Blocks'),
     summary: L(
-      '开发快照 · 尚未打进 v0.1.0 安装包。终端、视频、轮播、时钟等块集中落地。',
-      'Dev snapshot · not yet bundled into the v0.1.0 installer. Terminal, video, carousel, clock, and other blocks landed together.',
+      '开发快照 · 首个预览版发布前的阶段性记录。终端、视频、轮播、时钟等块集中落地。',
+      'Dev snapshot · pre-release progress notes. Terminal, video, carousel, clock, and other blocks landed together.',
     ),
     changes: [
       {

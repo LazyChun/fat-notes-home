@@ -10,7 +10,7 @@ This guide walks you through the basic setup and your first knowledge workspace.
 
 ## 1. Download and install
 
-Head to the <a href="/fat-notes-home/en/download">download page</a> for the current version, installer, and checksum.
+Head to the <a href="/fat-notes-home/en/download">download page</a> for the current version, installer, and checksum. The download page always lists the latest build; if you already have an older version, use "Check for Updates" inside the app.
 
 System requirements: Windows 10 or later with the WebView2 runtime (already included on most systems). Download the installer and follow the prompts—no extra environment setup needed.
 
