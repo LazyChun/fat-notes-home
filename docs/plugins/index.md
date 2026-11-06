@@ -20,3 +20,4 @@ FatNotes热门插件，欢迎使用。
 | [IT 面试题库（FatItInterview）](./fat-it-interview.md) | 364 道题，覆盖 Web 前端 / Java / 后端 / 运维 / 算法 / 数据库 / 网络 / 操作系统八大方向，支持分类与跨分类搜索、练习模式与本地进度；21 道算法题可逐步可视化演示 | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
 | 肥笔 | 项目制写作工作区，为长文写作（书稿、专栏、系列文章）提供专注环境 | 暂未开源 |
 | 人体图谱 | 2,234 个建模部件的可交互 3D 人体，支持按系统（骨骼、肌肉、神经、循环……）筛选与逐层拆卸 | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
+| 肥棋（FatChess） | 棋类游戏集合插件：围棋 / 五子棋 / 中国象棋 / 国际象棋 / 斗兽棋 / 军棋（明盘），支持人机对战、对战大模型与本机双人三种模式 | [LazyChun/fat-chess](https://github.com/LazyChun/fat-chess) |

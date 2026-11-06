@@ -20,3 +20,4 @@ Popular FatNotes plugins, all in one place.
 | IT Interview Bank (fat-it-interview) | 364 questions covering frontend / Java / backend / ops / algorithms / databases, with progress tracking | [LazyChun/fat-it-interview](https://github.com/LazyChun/fat-it-interview) |
 | 肥笔 | A project-based writing workspace for long-form writing (books, columns, article series) | Not open-sourced yet |
 | 3D Human Anatomy | An interactive 3D human body built from 2,234 modeled parts, with per-system filtering and layer-by-layer disassembly | [LazyChun/human-atlas-fat-notes-ext](https://github.com/LazyChun/human-atlas-fat-notes-ext) |
+| FatChess | A collection of board games — Go, Gomoku, Xiangqi, Chess, Jungle (Dou Shou Qi) and Junqi (open-board) — with three play modes: vs. local AI, vs. LLM, and local two-player | [LazyChun/fat-chess](https://github.com/LazyChun/fat-chess) |
