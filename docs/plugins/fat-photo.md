@@ -6,6 +6,10 @@ description: "FatPhoto（fat-photo）插件详解：内置 Canvas 图片编辑�
 
 # 肥图（FatPhoto）
 
+![FatPhoto 可完成的图像编辑效果示例](pathname:///fat-notes-home/img/instruction/fatPhoto/zh/fp-example.jpg)
+
+*示例：一张在图像编辑器中制作 / 编辑的扁平风格插画（卡通猪在电脑前打字），代表 FatPhoto 所支持的创作与编辑效果；图中可见工具栏、图层、属性、历史记录与状态栏等典型布局。* · <a href="/fat-notes-home/img/instruction/fatPhoto/zh/fp-example.jpg" target="_blank" rel="noopener">查看大图</a>
+
 > 肥图是 FatNotes 的**内置 Canvas 图片编辑器**插件（`fat-photo`）。它把一整块「图片处理工作台」搬进笔记里：左侧工具条 + 图层面板 + 历史记录，中间是带棋盘格画布的多标签编辑区，右侧是随图层类型变化的属性面板，底部是状态栏。从随手裁剪一张截图，到用画笔、文字、形状拼贴海报，再到导出 PNG / JPEG / WebP / SVG，都可以在这里完成，工程还能存成可再次编辑的 `.fpproj` 文件。
 
 ## 一、它是什么：一块「图片处理工作台」

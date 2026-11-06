@@ -6,6 +6,10 @@ description: "FatPhoto (fat-photo) plugin reference: the built-in Canvas image e
 
 # FatPhoto (fat-photo)
 
+![Example of image editing achievable with FatPhoto](pathname:///fat-notes-home/img/instruction/fatPhoto/zh/fp-example.jpg)
+
+*Illustration: a flat-style artwork (a cartoon pig typing at a computer) made or edited in an image editor, representing the kind of creation and editing FatPhoto supports; the picture shows typical tool strip, layers, properties, history and status-bar layouts.* · <a href="/fat-notes-home/img/instruction/fatPhoto/zh/fp-example.jpg" target="_blank" rel="noopener">Open full size</a>
+
 > FatPhoto is FatNotes' **built-in Canvas image editor** plugin (`fat-photo`). It brings a whole "image editing workbench" into your notes: a left tool strip + layers panel + history, a multi-tab editing area with a checkerboard canvas in the middle, a context-sensitive properties panel on the right, and a status bar at the bottom. From quickly cropping a screenshot, to composing a poster with brushes, text and shapes, to exporting PNG / JPEG / WebP / SVG — it all happens here, and the project can be saved as an editable `.fpproj` file.
 
 ## 1. What It Is: An "Image Editing Workbench"
