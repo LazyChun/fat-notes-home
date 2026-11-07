@@ -300,7 +300,7 @@ FatNotes 插件基于 **Module Federation** 在运行时加载（类比 VSCode �
 
 **肥笔**：项目制写作工作区：
 
-![第三方插件：轻型写作](pathname:///fat-notes-home/img/features/plugin-pen.png)
+![第三方插件：肥笔写手项目工作台](pathname:///fat-notes-home/img/features/plugin-pen.png)
 
 官方维护的插件还包括：
 

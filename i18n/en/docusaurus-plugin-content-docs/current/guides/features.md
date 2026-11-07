@@ -266,7 +266,7 @@ The host stays zero-heavy-dependency — chromadb, PaddleOCR, Playwright and oth
 
 **肥笔**: a project-based writing workspace:
 
-![Third-party plugin: light writing](pathname:///fat-notes-home/img/features/plugin-pen.png)
+![Third-party plugin: FatPen writing workspace](pathname:///fat-notes-home/img/features/plugin-pen.png)
 
 Official plugins also include:
 
