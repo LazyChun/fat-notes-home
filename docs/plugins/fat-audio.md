@@ -232,3 +232,4 @@ description: "肥音（fat-audio）插件详解：AI 音乐工作室的四个视
 - [肥笔（FatPen）](./fat-pen.md)
 - [肥・Ai基座（FatAiBase）](./fat-ai-base.md)
 - [插件开发](../plugin-dev/index.md)
+- 项目地址：[LazyChun/fat-audio](https://github.com/LazyChun/fat-audio)

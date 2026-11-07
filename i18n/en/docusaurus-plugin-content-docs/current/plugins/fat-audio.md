@@ -232,3 +232,4 @@ FatAudio splits "writing a melody" into four switchable perspectives: the **Work
 - [FatPen](./fat-pen.md)
 - [FatAiBase](./fat-ai-base.md)
 - [Plugin development](../plugin-dev/index.md)
+- Project repo: [LazyChun/fat-audio](https://github.com/LazyChun/fat-audio)

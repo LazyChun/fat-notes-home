@@ -258,7 +258,7 @@ AI 助手常驻工作台右侧栏，随时唤起对话，且**天然理解你的
 
 ### 场景 5：团队工具箱
 
-用插件把 FatNotes 变成团队门户：IT 面试题库、游戏箱、3D 展示……见下一节。
+用插件把 FatNotes 变成团队门户：工具箱、IT 面试题库、游戏箱、3D 车模展示……见下一节。
 
 ---
 
@@ -278,7 +278,7 @@ FatNotes 插件基于 **Module Federation** 在运行时加载（类比 VSCode �
 
 ### 生态里的第三方插件实况
 
-**人体图谱**（fat-dissect）：2,234 个建模部件的可交互 3D 人体，支持系统筛选与拆卸：
+**人体图谱**（Human-Atlas）：2,234 个建模部件的可交互 3D 人体，支持系统筛选与拆卸：
 
 ![第三方插件：人体图谱 3D](pathname:///fat-notes-home/img/features/plugin-body3d.png)
 
@@ -286,9 +286,13 @@ FatNotes 插件基于 **Module Federation** 在运行时加载（类比 VSCode �
 
 ![第三方插件：游戏箱](pathname:///fat-notes-home/img/features/plugin-games.png)
 
-**工具箱**（fat-tools）：Tesla Model X 3D 展示与部件爆炸拆解：
+**Model X**（model-x-studio）：Tesla Model X 3D 车模展示，可按车身与结构、全景玻璃、鹰翼门、高压电池、电驱动单元等部件逐层爆炸拆解：
 
-![第三方插件：Tesla Model X 3D](pathname:///fat-notes-home/img/features/plugin-tesla.png)
+![第三方插件：Model X 3D 车模](pathname:///fat-notes-home/img/features/plugin-tesla.png)
+
+**工具箱**（fat-tools）：100 个本地小工具，覆盖文本 / 编码 / 开发 / 数值 / 文件等 11 类，三段式工作台支持搜索直达与操作记录：
+
+![第三方插件：工具箱](pathname:///fat-notes-home/img/features/plugin-fattools.png)
 
 **IT 面试题库**（fat-it-interview）：364 道题，覆盖前端 / Java / 后端 / 运维 / 算法 / 数据库，支持刷题记录：
 

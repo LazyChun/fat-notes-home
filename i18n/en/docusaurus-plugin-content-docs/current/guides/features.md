@@ -224,7 +224,7 @@ Notes and charts share the screen: the weekly analysis note on the left, live ch
 
 ### Scenario 5: Team toolbox
 
-Plugins turn FatNotes into a team portal: IT interview bank, game box, 3D showcases… see the next section.
+Plugins turn FatNotes into a team portal: the toolbox, IT interview bank, game box, Model X 3D showcase… see the next section.
 
 ---
 
@@ -244,7 +244,7 @@ The host stays zero-heavy-dependency — chromadb, PaddleOCR, Playwright and oth
 
 ### Third-party plugins in the wild
 
-**Body Map** (fat-dissect): an interactive 3D human body with 2,234 modeled parts, system filters and peeling:
+**Body Map** (Human-Atlas): an interactive 3D human body with 2,234 modeled parts, system filters and peeling:
 
 ![Third-party plugin: Body Map 3D](pathname:///fat-notes-home/img/features/plugin-body3d.png)
 
@@ -252,9 +252,13 @@ The host stays zero-heavy-dependency — chromadb, PaddleOCR, Playwright and oth
 
 ![Third-party plugin: game box](pathname:///fat-notes-home/img/features/plugin-games.png)
 
-**Toolbox** (fat-tools): Tesla Model X 3D showcase with exploded parts:
+**Model X** (model-x-studio): an interactive Tesla Model X 3D model, with exploded views of the body, panoramic glass, falcon-wing doors, high-voltage battery, drive units and more:
 
-![Third-party plugin: Tesla Model X 3D](pathname:///fat-notes-home/img/features/plugin-tesla.png)
+![Third-party plugin: Model X 3D](pathname:///fat-notes-home/img/features/plugin-tesla.png)
+
+**Toolbox** (fat-tools): 100 local mini tools in 11 categories (text, encoding, dev, numbers, files...), in a three-part workbench with search shortcuts and usage history:
+
+![Third-party plugin: Toolbox](pathname:///fat-notes-home/img/features/plugin-fattools.png)
 
 **IT Interview Bank** (fat-it-interview): 364 questions across frontend / Java / backend / ops / algorithm / database, with study tracking:
 
