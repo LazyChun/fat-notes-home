@@ -158,6 +158,11 @@ const heroSlides = [
     alt: 'AI 助手：工作台侧栏 Chat 结合当前看板与知识库实时对话',
     caption: 'AI 助手 · 侧栏 Chat 实时协作',
   },
+  {
+    src: '/fat-notes-home/img/features/flow-result.png',
+    alt: '流程运行结果：时间戳转换后自动回填到看板文本块',
+    caption: '流程运行 · 结果自动回填',
+  },
 ];
 
 /**
