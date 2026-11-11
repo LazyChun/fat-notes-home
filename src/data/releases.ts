@@ -8,33 +8,43 @@
  *
  * 说明：主程序源码未公开发布，对外只提供 Windows 安装包；页面只引用发行版页面地址，
  * 不提供源码包或仓库链接。DOWNLOAD 始终表示当前可下载版本，历史版本信息放在
- * PREVIOUS_DOWNLOAD；dev 条目是正式版发布前的阶段性记录，不代表另行发布的安装包。
- * 发布新版时：更新 DOWNLOAD，把旧值移入 PREVIOUS_DOWNLOAD，并在 releases 数组头部追加一项。
+ * PREVIOUS_DOWNLOAD / FIRST_DOWNLOAD；dev 条目是正式版发布前的阶段性记录，不代表另行发布的安装包。
+ * 发布新版时：更新 DOWNLOAD，把旧值移入 PREVIOUS_DOWNLOAD，把更早的版本依次后移
+ * （必要时新增历史常量），并在 releases 数组头部追加一项。
  *
  * @author By AICode
- * @date 2026-11-07
+ * @date 2026-11-11
  */
 
 import {L} from './i18n';
 import type {Localized} from './i18n';
 
-/** 当前可下载版本的真实信息（v0.1.1，2026-11-07 06:15 发布） */
+/** 当前可下载版本的真实信息（v0.1.2，2026-11-11 15:00 发布） */
 export const DOWNLOAD = {
-  version: '0.1.1',
-  fileName: 'FatNotes-Setup-0.1.1.exe',
+  version: '0.1.2',
+  fileName: 'FatNotes-Setup-0.1.2.exe',
   /** Gitee 附件直链，应用内「检查更新」也使用同一地址规则 */
-  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.1/FatNotes-Setup-0.1.1.exe',
+  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.2/FatNotes-Setup-0.1.2.exe',
   /** 远端 version.json 提供的安装包 MD5，与本地 dist 打包产物一致 */
-  md5: 'bd4e7e7c947f58af379817c5e0d6d4a2',
-  /** Content-Length: 63053996 bytes */
+  md5: 'cac7e3df11c79e3a4777f37d225b9eea',
+  /** Content-Length: 63056511 bytes */
   fileSize: '60.1 MB',
-  publishedAt: '2026-11-07',
+  publishedAt: '2026-11-11',
   releasesUrl: 'https://gitee.com/lazychun/fat-notes/releases',
-  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.1',
+  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.2',
 } as const;
 
 /** 上一个正式版本，仅供更新日志里的历史版本展示 */
 export const PREVIOUS_DOWNLOAD = {
+  version: '0.1.1',
+  fileName: 'FatNotes-Setup-0.1.1.exe',
+  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.1/FatNotes-Setup-0.1.1.exe',
+  fileSize: '60.1 MB',
+  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.1',
+} as const;
+
+/** 首个正式版本（历史存档），供更新日志中的 v0.1.0 条目引用 */
+export const FIRST_DOWNLOAD = {
   version: '0.1.0',
   fileName: 'FatNotes-Setup-0.1.0.exe',
   url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.0/FatNotes-Setup-0.1.0.exe',
@@ -70,6 +80,76 @@ export interface ReleaseEntry {
 
 /** 按时间倒序：第 1 项为当前下载版本，其余为历史版本与开发记录 */
 export const releases: ReleaseEntry[] = [
+  {
+    id: 'v0.1.2',
+    version: 'v0.1.2',
+    date: '2026-11-11',
+    channel: 'stable',
+    title: L('块编辑打磨与问题修复', 'Block Editing Polish & Bug Fixes'),
+    summary: L(
+      '第三个公开预览版。官方发布说明为「修复一些 bug」；11 月 8 日以来的插件安装、画布缩放与块编辑交互改进也一并打包。',
+      'Third public preview. Official notes say "bug fixes", bundled with the plugin installation, canvas zoom, and block editing improvements made since Nov 8.',
+    ),
+    changes: [
+      {
+        kind: 'fix',
+        text: L(
+          '修复若干已知问题（官方发布说明）。',
+          'Fixed known issues (official release note).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          '块支持悬停编辑：鼠标移到块上即可直接唤起编辑操作（11-11）。',
+          'Hover-to-edit for blocks: hovering a block now exposes its editing affordances (Nov 11).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '优化块编辑时的按键处理，输入与快捷键更顺手（11-11）。',
+          'Improved key handling while editing blocks, with smoother typing and shortcuts (Nov 11).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '增强 FatFlow / BlockFlow 画布的缩放能力（11-10）。',
+          'Better zoom behavior in the FatFlow and BlockFlow canvases (Nov 10).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '扩展安装按钮的状态与加载提示更清晰（11-08）。',
+          'Clearer install button states and loading indicators for extensions (Nov 8).',
+        ),
+      },
+      {
+        kind: 'fix',
+        text: L(
+          '修复插件更新流程中的异常（11-08）。',
+          'Fixed issues in the plugin update flow (Nov 8).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '版本号升至 0.1.2，安装包与自动更新通道同步更新（11-11）。',
+          'Version bumped to 0.1.2 with the installer and in-app update channel kept in sync (Nov 11).',
+        ),
+      },
+    ],
+    assets: [
+      {
+        label: L('Windows 安装包', 'Windows installer'),
+        meta: `${DOWNLOAD.fileName} · ${DOWNLOAD.fileSize}`,
+        url: DOWNLOAD.url,
+      },
+    ],
+    releaseUrl: DOWNLOAD.releaseTagUrl,
+  },
   {
     id: 'v0.1.1',
     version: 'v0.1.1',
@@ -155,11 +235,11 @@ export const releases: ReleaseEntry[] = [
     assets: [
       {
         label: L('Windows 安装包', 'Windows installer'),
-        meta: `${DOWNLOAD.fileName} · ${DOWNLOAD.fileSize}`,
-        url: DOWNLOAD.url,
+        meta: `${PREVIOUS_DOWNLOAD.fileName} · ${PREVIOUS_DOWNLOAD.fileSize}`,
+        url: PREVIOUS_DOWNLOAD.url,
       },
     ],
-    releaseUrl: DOWNLOAD.releaseTagUrl,
+    releaseUrl: PREVIOUS_DOWNLOAD.releaseTagUrl,
   },
   {
     id: 'v0.1.0',
@@ -225,11 +305,11 @@ export const releases: ReleaseEntry[] = [
     assets: [
       {
         label: L('Windows 安装包', 'Windows installer'),
-        meta: `${PREVIOUS_DOWNLOAD.fileName} · ${PREVIOUS_DOWNLOAD.fileSize}`,
-        url: PREVIOUS_DOWNLOAD.url,
+        meta: `${FIRST_DOWNLOAD.fileName} · ${FIRST_DOWNLOAD.fileSize}`,
+        url: FIRST_DOWNLOAD.url,
       },
     ],
-    releaseUrl: PREVIOUS_DOWNLOAD.releaseTagUrl,
+    releaseUrl: FIRST_DOWNLOAD.releaseTagUrl,
   },
   {
     id: 'dev-2026-10-31',
