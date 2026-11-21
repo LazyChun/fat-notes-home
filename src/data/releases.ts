@@ -8,34 +8,43 @@
  *
  * 说明：主程序源码未公开发布，对外只提供 Windows 安装包；页面只引用发行版页面地址，
  * 不提供源码包或仓库链接。DOWNLOAD 始终表示当前可下载版本，历史版本信息放在
- * PREVIOUS_DOWNLOAD / FIRST_DOWNLOAD；dev 条目是正式版发布前的阶段性记录，不代表另行发布的安装包。
+ * PREVIOUS_DOWNLOAD / DOWNLOAD_011 / FIRST_DOWNLOAD；dev 条目是正式版发布前的阶段性记录，不代表另行发布的安装包。
  * 发布新版时：更新 DOWNLOAD，把旧值移入 PREVIOUS_DOWNLOAD，把更早的版本依次后移
  * （必要时新增历史常量），并在 releases 数组头部追加一项。
  *
  * @author By AICode
- * @date 2026-11-11
+ * @date 2026-11-21
  */
 
 import {L} from './i18n';
 import type {Localized} from './i18n';
 
-/** 当前可下载版本的真实信息（v0.1.2，2026-11-11 15:00 发布） */
+/** 当前可下载版本的真实信息（v0.1.3，2026-11-21 23:13 发布） */
 export const DOWNLOAD = {
-  version: '0.1.2',
-  fileName: 'FatNotes-Setup-0.1.2.exe',
+  version: '0.1.3',
+  fileName: 'FatNotes-Setup-0.1.3.exe',
   /** Gitee 附件直链，应用内「检查更新」也使用同一地址规则 */
-  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.2/FatNotes-Setup-0.1.2.exe',
+  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.3/FatNotes-Setup-0.1.3.exe',
   /** 远端 version.json 提供的安装包 MD5，与本地 dist 打包产物一致 */
-  md5: 'cac7e3df11c79e3a4777f37d225b9eea',
-  /** Content-Length: 63056511 bytes */
-  fileSize: '60.1 MB',
-  publishedAt: '2026-11-11',
+  md5: 'b2db738cde15d9753c9db7d6f128cb22',
+  /** Content-Length: 64153012 bytes */
+  fileSize: '61.2 MB',
+  publishedAt: '2026-11-21',
   releasesUrl: 'https://gitee.com/lazychun/fat-notes/releases',
-  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.2',
+  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.3',
 } as const;
 
 /** 上一个正式版本，仅供更新日志里的历史版本展示 */
 export const PREVIOUS_DOWNLOAD = {
+  version: '0.1.2',
+  fileName: 'FatNotes-Setup-0.1.2.exe',
+  url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.2/FatNotes-Setup-0.1.2.exe',
+  fileSize: '60.1 MB',
+  releaseTagUrl: 'https://gitee.com/lazychun/fat-notes/releases/tag/v0.1.2',
+} as const;
+
+/** v0.1.1 历史安装包，仅供更新日志里的历史版本展示 */
+export const DOWNLOAD_011 = {
   version: '0.1.1',
   fileName: 'FatNotes-Setup-0.1.1.exe',
   url: 'https://gitee.com/lazychun/fat-notes/releases/download/v0.1.1/FatNotes-Setup-0.1.1.exe',
@@ -80,6 +89,83 @@ export interface ReleaseEntry {
 
 /** 按时间倒序：第 1 项为当前下载版本，其余为历史版本与开发记录 */
 export const releases: ReleaseEntry[] = [
+  {
+    id: 'v0.1.3',
+    version: 'v0.1.3',
+    date: '2026-11-21',
+    channel: 'stable',
+    title: L('样式修复与交互优化', 'Style Fixes & Interaction Polish'),
+    summary: L(
+      '第四个公开预览版。官方发布说明为「修复一些样式问题，优化交互」；11 月 12 日以来的日历选择、运行管理界面、插件路由隔离与保存文件能力也一并打包。',
+      'Fourth public preview. Official notes say "style fixes and interaction polish", bundled with the calendar, run manager, per-plugin routing, and save-file work since Nov 12.',
+    ),
+    changes: [
+      {
+        kind: 'improve',
+        text: L(
+          '修复一些样式问题，优化交互（官方发布说明）。',
+          'Fixed style issues and polished interactions (official release note).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '日历选择器把当前面板月份和已选日期分开，跨月、跨年切换时选中态与迷你日历一致（11-17）。',
+          'The calendar picker keeps the visible month separate from the selected date, so month and year changes match the mini-calendar selection style (Nov 17).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          '插件可通过宿主保存文件对话框选择路径与文件名，并写回内容（11-16）。',
+          'Plugins can open the host save-file dialog to choose a path and filename, then write the content (Nov 16).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '运行管理侧栏的间距、菜单高度与悬停、选中态更清晰（11-14）。',
+          'Clearer spacing, menu height, and hover and selected states in the run manager sidebar (Nov 14).',
+        ),
+      },
+      {
+        kind: 'fix',
+        text: L(
+          '全局搜索仅在输入匹配插件的 inputPattern 时，才把查询词传给该插件（11-14）。',
+          'Global search now passes the query to a plugin only when the input matches that plugin\'s inputPattern (Nov 14).',
+        ),
+      },
+      {
+        kind: 'feat',
+        text: L(
+          '插件后端可读取宿主已配置的 AI Skills 与知识库摘要，返回内容已脱敏（11-12）。',
+          'Plugin backends can list host AI skills and knowledge-base summaries, with secrets stripped from the response (Nov 12).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '插件路由改为各自独立的内存历史栈，多个插件之间的前进、后退互不干扰（11-12）。',
+          'Each plugin now has its own in-memory route history, so back and forward no longer collide across plugins (Nov 12).',
+        ),
+      },
+      {
+        kind: 'improve',
+        text: L(
+          '版本号升至 0.1.3，安装包与自动更新通道同步更新（11-21）。',
+          'Version bumped to 0.1.3 with the installer and in-app update channel kept in sync (Nov 21).',
+        ),
+      },
+    ],
+    assets: [
+      {
+        label: L('Windows 安装包', 'Windows installer'),
+        meta: `${DOWNLOAD.fileName} · ${DOWNLOAD.fileSize}`,
+        url: DOWNLOAD.url,
+      },
+    ],
+    releaseUrl: DOWNLOAD.releaseTagUrl,
+  },
   {
     id: 'v0.1.2',
     version: 'v0.1.2',
@@ -144,11 +230,11 @@ export const releases: ReleaseEntry[] = [
     assets: [
       {
         label: L('Windows 安装包', 'Windows installer'),
-        meta: `${DOWNLOAD.fileName} · ${DOWNLOAD.fileSize}`,
-        url: DOWNLOAD.url,
+        meta: `${PREVIOUS_DOWNLOAD.fileName} · ${PREVIOUS_DOWNLOAD.fileSize}`,
+        url: PREVIOUS_DOWNLOAD.url,
       },
     ],
-    releaseUrl: DOWNLOAD.releaseTagUrl,
+    releaseUrl: PREVIOUS_DOWNLOAD.releaseTagUrl,
   },
   {
     id: 'v0.1.1',
@@ -235,11 +321,11 @@ export const releases: ReleaseEntry[] = [
     assets: [
       {
         label: L('Windows 安装包', 'Windows installer'),
-        meta: `${PREVIOUS_DOWNLOAD.fileName} · ${PREVIOUS_DOWNLOAD.fileSize}`,
-        url: PREVIOUS_DOWNLOAD.url,
+        meta: `${DOWNLOAD_011.fileName} · ${DOWNLOAD_011.fileSize}`,
+        url: DOWNLOAD_011.url,
       },
     ],
-    releaseUrl: PREVIOUS_DOWNLOAD.releaseTagUrl,
+    releaseUrl: DOWNLOAD_011.releaseTagUrl,
   },
   {
     id: 'v0.1.0',

@@ -70,7 +70,8 @@ export function deactivate(): void {
 | `sdk.contributions` | 注册全部 UI 贡献点 |
 | `sdk.events` | 插件 / 宿主事件总线 |
 | `sdk.flow` | 列举、读取、执行宿主工作流 |
-| `sdk.ai` | 调用宿主 AI 模型与对话补全 |
+| `sdk.ai` | 调用宿主 AI 模型与对话补全，并可读取已配置的 Skills 与知识库摘要（密钥已剥离） |
+| `sdk.router` | 插件独立的内存路由：导航、替换、后退，各插件历史互不干扰 |
 | `sdk.asset` | 资源仓库：列出 / 上传 / 重命名 / 移动文件 |
 | `sdk.boards` | 插件独立的看板配置 |
 | `sdk.remoteComponents` | 复用宿主组件（块容器、流程编辑器、时间 / Cron 选择器） |

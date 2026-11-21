@@ -70,7 +70,8 @@ export function deactivate(): void {
 | `sdk.contributions` | Register all UI contribution points |
 | `sdk.events` | Plugin / host event bus |
 | `sdk.flow` | List, read, and execute host workflows |
-| `sdk.ai` | Call host AI models and chat completions |
+| `sdk.ai` | Call host AI models and chat completions, and read configured skills and knowledge-base summaries (secrets stripped) |
+| `sdk.router` | Per-plugin in-memory routing: navigate, replace, and back, with history isolated between plugins |
 | `sdk.asset` | Asset repository: list / upload / rename / move files |
 | `sdk.boards` | Plugin-private board configs |
 | `sdk.remoteComponents` | Reuse host components (block container, flow editor, time / Cron pickers) |
